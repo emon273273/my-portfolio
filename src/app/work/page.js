@@ -39,7 +39,7 @@ export default function Work() {
       <h1 className="text-3xl font-bold mb-8 mt-8 md:mt-20">Work</h1>
       <div className="space-y-8 md:space-y-12">
         {workItems.map((item, index) => (
-          <div key={index} className="flex flex-col md:flex-row items-start">
+          <div key={index} className="flex flex-col md:flex-row items-start ">
             <div className="w-full md:w-1/3 mb-4 md:mb-0">
               <Image
                 src={item.image}
@@ -49,17 +49,18 @@ export default function Work() {
                 className="rounded-lg object-cover w-full"
               />
             </div>
-            <div className="md:ml-6 w-full md:w-2/3">
+            <div className="md:ml-6 w-full md:w-2/3 ">
               <h2 className="text-2xl font-bold mb-2">{item.title}</h2>
               <div className="flex items-center mb-2">
-                <span className="bg-blue-900 text-white px-2 py-1 rounded-full text-sm mr-4">
+                <span className="bg-[#142850] text-white px-2 py-1 rounded-full text-sm mr-4">
                   {item.year}
                 </span>
                 <span className="text-gray-600">{item.category}</span>
               </div>
-              <p className="text-gray-700">{item.description}</p>
+              <p className="title-content">{item.description}</p>
             </div>
           </div>
+          
         ))}
       </div>
     </div>

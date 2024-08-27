@@ -13,7 +13,7 @@ const heebo = Heebo({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={heebo.className}>
-      <body>
+      <body >
         <Navbar />
         {children}
         <Footer/>
