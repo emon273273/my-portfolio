@@ -2,7 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+.title {
+  font-family: 'Heboo';
+  font-weight: 700; /* Or 700 for Heboo-700 */
+}
+
+.navbar{
+  font-family: 'Heboo';
+  font-weight: 500;
+}
+
+.title-content{
+  font-family: 'Heboo';
+  font-weight: 400;
+}
+
+.download-button{
+  font-family: 'Heboo';
+  font-weight: 500;
+}
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,9 +38,9 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -30,4 +54,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
